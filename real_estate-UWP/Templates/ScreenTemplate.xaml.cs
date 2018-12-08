@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -13,18 +14,30 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace real_estate_UWP.Templates
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class ScreenTemplate : Page
     {
         public ScreenTemplate()
         {
             this.InitializeComponent();
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            SplitViewe4ka.IsPaneOpen = !SplitViewe4ka.IsPaneOpen;
+        }
+
+        private void TopItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (TopItems.SelectedIndex == 0) TopItems.SelectedItem.ToString();
+            if (TopItems.SelectedIndex == 1) Debug.WriteLine("А это второй элемент");
+            if (TopItems.SelectedIndex != -1 && BottomItems.SelectedIndex != -1) BottomItems.SelectedIndex = -1;
+        }
+
+        private void BottomItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (TopItems.SelectedIndex != -1 && BottomItems.SelectedIndex != -1) TopItems.SelectedIndex = -1;
         }
     }
 }
