@@ -71,13 +71,6 @@ namespace real_estate_UWP
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
-
-                //задаем размер окна на старте
-                ApplicationView.PreferredLaunchViewSize = new Size(740, 555);
-                ApplicationView.PreferredLaunchWindowingMode =
-                  ApplicationViewWindowingMode.PreferredLaunchViewSize;
-                //задаем минимальный размер окна
-                ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(300, 500));
             }
         }
 
