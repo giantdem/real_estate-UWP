@@ -9,6 +9,69 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <SplitView x:Name="SplitViewe4ka" IsPaneOpen="True"
+           DisplayMode="Inline"
+           OpenPaneLength="225" PaneClosing="SplitViewe4ka_PaneClosing">
+            <SplitView.Pane>
+                <Grid>
+                    <StackPanel Height="150" VerticalAlignment="Top">
+                        <Image x:Name="ProfilePic" Height="100" Width="100" Source="ms-appx:///Assets/ProfilePicSample.jpg" Margin="0 10 0 0"></Image>
+                        <TextBlock x:Name="UserName" Text="Петров Пётр" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 5 0 0"></TextBlock>
+                    </StackPanel>
+                    <ScrollViewer Margin="0 150 0 0" ScrollViewer.VerticalScrollBarVisibility="Auto" Background="#FFEBEBEB" BorderThickness="0,1,0,0" BorderBrush="#FFBEBEBE">
+                        <Grid MinHeight="350">
+                            <ListBox SelectionMode="Single" 
+                         x:Name="TopItems" SelectionChanged="TopItems_SelectionChanged" Background="{x:Null}">
+                                <ListBoxItem x:Name="RealEstateItem">
+                                    <TextBlock Text="Объекты недвижимости" FontSize="14" />
+                                </ListBoxItem>
+                                <ListBoxItem x:Name="ContractsItem">
+                                    <TextBlock Text="Договоры" FontSize="14" />
+                                </ListBoxItem>
+                                <ListBoxItem x:Name="AdsItem">
+                                    <TextBlock Text="Объявления" FontSize="14" />
+                                </ListBoxItem>
+                                <ListBoxItem x:Name="ClientsItem">
+                                    <TextBlock Text="Клиенты" FontSize="14" />
+                                </ListBoxItem>
+                                <ListBoxItem x:Name="ReportingItem">
+                                    <TextBlock Text="Отчетность" FontSize="14" />
+                                </ListBoxItem>
+                            </ListBox>
+                            <ListBox SelectionMode="Single" 
+                         x:Name="BottomItems" SelectionChanged="BottomItems_SelectionChanged" VerticalAlignment="Bottom" Background="{x:Null}" BorderThickness="0,1,0,0" BorderBrush="#FFBEBEBE">
+                                <ListBoxItem x:Name="DraftsItem">
+                                    <TextBlock Text="Черновики" FontSize="14" />
+                                </ListBoxItem>
+                                <ListBoxItem x:Name="EmployeesItem">
+                                    <TextBlock Text="Сотрудники" FontSize="14" />
+                                </ListBoxItem>
+                                <ListBoxItem x:Name="SettingsItem">
+                                    <TextBlock Text="Настройки" FontSize="14" />
+                                </ListBoxItem>
+                            </ListBox>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </SplitView.Pane>
 
+            <Frame x:Name="ContentPage">
+                <Grid>
+                    <Grid Background="#FF77777F" Margin="0" VerticalAlignment="Top" Height="80" Padding="20">
+                        <TextBlock FontSize="24" Foreground="White">Заголовок</TextBlock>
+                    </Grid>
+
+                    <Grid Margin="0,80,0,0" Padding="20">
+                        <TextBlock>Контент</TextBlock>
+                    </Grid>
+                </Grid>
+            </Frame>
+        </SplitView>
+
+        <RelativePanel>
+            <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="22" Click="HamburgerButton_Click" Background="{x:Null}" />
+        </RelativePanel>
     </Grid>
+
 </Page>
+
