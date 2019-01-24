@@ -12,25 +12,45 @@
             <TextBlock FontSize="24" Foreground="White" Text="Заголовок" VerticalAlignment="Center"/>
             <Button Content="Кнопка меню" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         </Grid>
+        <Grid Margin="0,80,0,0">
+            <ScrollViewer>
+                <StackPanel Padding="20">
+                    <StackPanel Background="#FFCBCBCB" Margin="10">
+                        <TextBlock TextWrapping="Wrap" Text="Заголовок" Margin="10" FontWeight="Bold" FontSize="20"/>
+                        <TextBlock Margin="10" TextWrapping="Wrap">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </TextBlock>
+                    </StackPanel>
 
-        <StackPanel Margin="0,80,0,0" Padding="20">
+                    <StackPanel Background="#FFCBCBCB" Margin="10">
+                        <TextBlock TextWrapping="Wrap" Text="Заголовок" Margin="10" FontWeight="Bold" FontSize="20"/>
 
-            <RelativePanel VerticalAlignment="Top" Background="#FFCBCBCB" Margin="0,10">
-                <TextBlock x:Name="TextName" HorizontalAlignment="Left" TextWrapping="Wrap" Width="205" Text="Заголовок" VerticalAlignment="Top" Margin="10" FontWeight="Bold" FontSize="20"/>
-                <TextBlock RelativePanel.Below="TextName" Margin="10" TextWrapping="Wrap" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
-            </RelativePanel>
+                        <VariableSizedWrapGrid Background="#FFCBCBCB" Margin="0,10" Orientation="Horizontal">
+                            <StackPanel Margin="10">
+                                <TextBlock TextWrapping="Wrap" Text="Заголовок элемента" Margin="10,0" />
+                                <TextBox Width="400" Text="TextBox" Margin="10" HorizontalAlignment="Left"/>
+                            </StackPanel>
 
-            <RelativePanel VerticalAlignment="Top" Background="#FFCBCBCB" Margin="0,10">
-                <TextBlock x:Name="FormName" HorizontalAlignment="Left" Width="200" TextWrapping="Wrap" Text="Название формы" VerticalAlignment="Top" Margin="10" FontWeight="Bold" FontSize="20"/>
-                <TextBlock x:Name="ElemLabel1" HorizontalAlignment="Left" Width="200" TextWrapping="Wrap" Text="Заголовок элемента" VerticalAlignment="Top" Margin="10,0" RelativePanel.Below="FormName"/>
-                <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="32" Width="200" TextWrapping="Wrap" Text="TextBox" Margin="10" RelativePanel.Below="ElemLabel1" RelativePanel.AlignLeftWith="ElemLabel1"/>
-                <TextBlock x:Name="ElemLabel2" HorizontalAlignment="Left" Width="200" TextWrapping="Wrap" Text="Заголовок элемента" VerticalAlignment="Top" Margin="10,0" RelativePanel.Below="FormName" RelativePanel.RightOf="ElemLabel1"/>
-                <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="32" Width="200" TextWrapping="Wrap" Text="TextBox" Margin="10" RelativePanel.Below="ElemLabel2" RelativePanel.AlignLeftWith="ElemLabel2"/>
-                <TextBlock x:Name="ElemLabel3" HorizontalAlignment="Left" Width="200" TextWrapping="Wrap" Text="Заголовок элемента" VerticalAlignment="Top" Margin="10,0" RelativePanel.Below="tb2"/>
-                <ComboBox x:Name="cb1" HorizontalAlignment="Left" Width="200" Margin="10" RelativePanel.Below="ElemLabel3"/>
-                <Button Content="Кнопка" HorizontalAlignment="Left" Width="200" Margin="10" RelativePanel.RightOf="tb1" RelativePanel.AlignBottomWith="cb1"/>
-            </RelativePanel>
-        </StackPanel>
+                            <StackPanel Margin="10">
+                                <TextBlock TextWrapping="Wrap" Text="Заголовок элемента" Margin="10,0"/>
+                                <TextBox Width="200" Text="TextBox" Margin="10" HorizontalAlignment="Left"/>
+                            </StackPanel>
+
+                            <StackPanel Margin="10">
+                                <TextBlock TextWrapping="Wrap" Text="Заголовок элемента" Margin="10,0" />
+                                <ComboBox Width="400" Margin="10" VerticalAlignment="Stretch"/>
+                            </StackPanel>
+
+                            <Button Content="Кнопка" Width="200" Margin="20" VerticalAlignment="Bottom"/>
+                        </VariableSizedWrapGrid>
+                    </StackPanel>
+
+                    <StackPanel Background="#FFCBCBCB" Margin="10">
+                        <TextBlock TextWrapping="Wrap" Text="Заголовок" Margin="10" FontWeight="Bold" FontSize="20"/>
+                        <TextBox Width="400" TextWrapping="Wrap" Text="TextBox" Margin="10" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </Page>
-

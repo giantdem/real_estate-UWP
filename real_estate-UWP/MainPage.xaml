@@ -10,6 +10,7 @@
 
     <Grid>
         <Button x:Name="TestButton" Content="Тестовая кнопка" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Click="TestButton_Click"/>
+        <Button x:Name="TestButton2" Content="Тестовая кнопка 2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,60,10,10" Click="TestButton2_Click"/>
 
     </Grid>
 </Page>
