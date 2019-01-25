@@ -10,7 +10,6 @@
     <Grid>
         <Grid Background="#FF77777F" Margin="0" VerticalAlignment="Top" Height="80" Padding="20" >
             <TextBlock FontSize="24" Foreground="White" Text="Заголовок" VerticalAlignment="Center"/>
-            <Button Content="Кнопка меню" HorizontalAlignment="Right" VerticalAlignment="Center"/>
         </Grid>
         <Grid Margin="0,80,0,0">
             <ScrollViewer>
