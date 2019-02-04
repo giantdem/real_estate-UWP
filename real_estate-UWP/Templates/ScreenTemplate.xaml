@@ -22,6 +22,9 @@
                         <Grid MinHeight="350">
                             <ListBox SelectionMode="Single" 
                          x:Name="TopItems" SelectionChanged="TopItems_SelectionChanged" Background="{x:Null}">
+                                <ListBoxItem x:Name="TestPageItem">
+                                    <TextBlock Text="*ТЕСТОВАЯ СТРАНИЦА*" FontSize="14" />
+                                </ListBoxItem>
                                 <ListBoxItem x:Name="RealEstateItem">
                                     <TextBlock Text="Объекты недвижимости" FontSize="14" />
                                 </ListBoxItem>
