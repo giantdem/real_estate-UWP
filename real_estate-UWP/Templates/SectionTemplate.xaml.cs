@@ -27,7 +27,7 @@ namespace real_estate_UWP.Templates
         {
             if (ContentContainer.ActualWidth < 601)
             {
-                ContentArea.Width = ContentContainer.ActualWidth - ContentContainer.Padding.Top * 2;
+                ContentArea.Width = ContentContainer.ActualWidth - ContentContainer.Padding.Right * 2;
             }
             else ContentArea.Width = 450;
         }
