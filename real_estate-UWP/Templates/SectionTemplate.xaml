@@ -42,10 +42,18 @@
                 </StackPanel>
 
                 <Button Margin="0,5" Content="Кнопка" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A"/>
-                <ListView x:Name="listView" Height="100"/>
+                <ListView x:Name="listViewe4ka" ItemsSource="{x:Bind ViewModel.TestItems}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="local:TestItem">
+                            <StackPanel Padding="5">
+                                <TextBlock Text="{x:Bind Title}" FontWeight="Bold" Margin="0,0,0,5"/>
+                                <TextBlock Text="{x:Bind Description}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackPanel>
-            
-            
+
         </ScrollViewer>
     </Grid>
 </Page>
