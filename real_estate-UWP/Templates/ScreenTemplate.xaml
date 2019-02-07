@@ -20,39 +20,39 @@
                     </StackPanel>
                     <ScrollViewer Margin="0 150 0 0" ScrollViewer.VerticalScrollBarVisibility="Auto" Background="#FFEBEBEB" BorderThickness="0,1,0,0" BorderBrush="#FFBEBEBE">
                         <Grid MinHeight="350">
-                            <ListBox SelectionMode="Single" 
+                            <ListView SelectionMode="Single" 
                          x:Name="TopItems" SelectionChanged="TopItems_SelectionChanged" Background="{x:Null}">
-                                <ListBoxItem x:Name="TestPageItem">
+                                <ListViewItem x:Name="TestPageItem">
                                     <TextBlock Text="*ТЕСТОВАЯ СТРАНИЦА*" FontSize="14" />
-                                </ListBoxItem>
-                                <ListBoxItem x:Name="RealEstateItem">
+                                </ListViewItem>
+                                <ListViewItem x:Name="RealEstateItem">
                                     <TextBlock Text="Объекты недвижимости" FontSize="14" />
-                                </ListBoxItem>
-                                <ListBoxItem x:Name="ContractsItem">
+                                </ListViewItem>
+                                <ListViewItem x:Name="ContractsItem">
                                     <TextBlock Text="Договоры" FontSize="14" />
-                                </ListBoxItem>
-                                <ListBoxItem x:Name="AdsItem">
+                                </ListViewItem>
+                                <ListViewItem x:Name="AdsItem">
                                     <TextBlock Text="Объявления" FontSize="14" />
-                                </ListBoxItem>
-                                <ListBoxItem x:Name="ClientsItem">
+                                </ListViewItem>
+                                <ListViewItem x:Name="ClientsItem">
                                     <TextBlock Text="Клиенты" FontSize="14" />
-                                </ListBoxItem>
-                                <ListBoxItem x:Name="ReportingItem">
+                                </ListViewItem>
+                                <ListViewItem x:Name="ReportingItem">
                                     <TextBlock Text="Отчетность" FontSize="14" />
-                                </ListBoxItem>
-                            </ListBox>
-                            <ListBox SelectionMode="Single" 
+                                </ListViewItem>
+                            </ListView>
+                            <ListView SelectionMode="Single" 
                          x:Name="BottomItems" SelectionChanged="BottomItems_SelectionChanged" VerticalAlignment="Bottom" Background="{x:Null}" BorderThickness="0,1,0,0" BorderBrush="#FFBEBEBE">
-                                <ListBoxItem x:Name="DraftsItem">
+                                <ListViewItem x:Name="DraftsItem">
                                     <TextBlock Text="Черновики" FontSize="14" />
-                                </ListBoxItem>
-                                <ListBoxItem x:Name="EmployeesItem">
+                                </ListViewItem>
+                                <ListViewItem x:Name="EmployeesItem">
                                     <TextBlock Text="Сотрудники" FontSize="14" />
-                                </ListBoxItem>
-                                <ListBoxItem x:Name="SettingsItem">
+                                </ListViewItem>
+                                <ListViewItem x:Name="SettingsItem">
                                     <TextBlock Text="Настройки" FontSize="14" />
-                                </ListBoxItem>
-                            </ListBox>
+                                </ListViewItem>
+                            </ListView>
                         </Grid>
                     </ScrollViewer>
                 </Grid>

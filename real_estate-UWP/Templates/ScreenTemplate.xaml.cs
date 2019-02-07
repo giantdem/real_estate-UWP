@@ -34,7 +34,7 @@ namespace real_estate_UWP.Templates
         private void TopItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (TopItems.SelectedIndex == -1) return;
-            switch ((TopItems.SelectedItem as ListBoxItem).Name)
+            switch ((TopItems.SelectedItem as ListViewItem).Name)
             {
                 case "TestPageItem":
                     //тестирование шаблона
@@ -63,7 +63,7 @@ namespace real_estate_UWP.Templates
         private void BottomItems_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (BottomItems.SelectedIndex == -1) return;
-            switch ((BottomItems.SelectedItem as ListBoxItem).Name)
+            switch ((BottomItems.SelectedItem as ListViewItem).Name)
             {
                 case "DraftsItem":
                     ContentPage.Navigate(typeof(Misc.Drafts.DraftsMain));
