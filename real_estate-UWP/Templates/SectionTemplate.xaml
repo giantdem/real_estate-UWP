@@ -9,26 +9,27 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" SizeChanged="Page_SizeChanged">
 
     <Page.Resources>
-
         <DataTemplate x:Key="headerCustom">
             <TextBlock Text="{Binding}" FontSize="18" />
         </DataTemplate>
-
     </Page.Resources>
 
     <Grid>
         <RelativePanel VerticalAlignment="Top" Height="47" BorderThickness="0,0,0,2" BorderBrush="#FFBEBEBE">
             <TextBlock Name="HeaderText" FontSize="18" Text="Заголовок" VerticalAlignment="Center" Margin="55,0,0,0" RelativePanel.AlignVerticalCenterWithPanel="True" FontWeight="Bold"/>
         </RelativePanel>
-        <ScrollViewer Name="ContentContainer" Margin="0,47,0,0" Padding="15,5">
+        
+        <ScrollViewer Name="ContentContainer" Margin="0,47,0,45" Padding="15,5">
             <StackPanel Name="ContentArea" HorizontalAlignment="Left">
                 <StackPanel Margin="0,5">
                     <TextBox Header="Надпись" HeaderTemplate="{StaticResource headerCustom}" TextWrapping="Wrap" PlaceholderText="Текстовое поле" FontSize="14"/>
                 </StackPanel>
+                
                 <Grid>
                     <TextBlock Text="Надпись" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,3"/>
                     <ToggleSwitch OffContent="" OnContent="" MinWidth="45" Width="45" HorizontalAlignment="Right"/>
                 </Grid>
+                
                 <StackPanel Margin="0,5">
                     <ComboBox Header="Надпись" HeaderTemplate="{StaticResource headerCustom}" PlaceholderText="Выпадающий список" FontSize="14" HorizontalAlignment="Stretch">
                         <x:String>Item1</x:String>
@@ -37,11 +38,13 @@
                         <x:String>Item4</x:String>
                     </ComboBox>
                 </StackPanel>
+                
                 <StackPanel Margin="0,5">
                     <TextBox Header="Надпись" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="128" HeaderTemplate="{StaticResource headerCustom}" TextWrapping="Wrap" PlaceholderText="Большой текст&#x0a;&#x0a;" FontSize="14" AcceptsReturn="True"/>
                 </StackPanel>
 
                 <Button Margin="0,5" Content="Кнопка" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A"/>
+                
                 <ListView x:Name="listViewe4ka" ItemsSource="{x:Bind ViewModel.TestItems}">
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="local:TestItem">
@@ -53,7 +56,12 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </StackPanel>
-
         </ScrollViewer>
+
+        <StackPanel Height="45" VerticalAlignment="Bottom" Background="#FFE0E0E0" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button x:Name="CommandButton3" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+            <Button x:Name="CommandButton2" FontFamily="Segoe MDL2 Assets" Content="&#xE70F;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+            <Button x:Name="CommandButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE710;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+        </StackPanel>
     </Grid>
 </Page>
