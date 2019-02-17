@@ -99,5 +99,10 @@ namespace real_estate_UWP.Templates
         {
             if (preventPaneClose == true) args.Cancel = true;
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (ContentPage.CanGoBack) ContentPage.GoBack();
+        }
     }
 }
