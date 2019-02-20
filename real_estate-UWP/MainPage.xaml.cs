@@ -27,10 +27,5 @@ namespace real_estate_UWP
         {
             this.Frame.Navigate(typeof(ScreenTemplate));
         }
-
-        private void TestButton2_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(SectionTemplate));
-        }
     }
 }
