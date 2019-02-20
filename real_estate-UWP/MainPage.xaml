@@ -9,8 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="TestButton" Content="Тестовая кнопка" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Click="TestButton_Click"/>
-        <Button x:Name="TestButton2" Content="Тестовая кнопка 2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,60,10,10" Click="TestButton2_Click"/>
+        <StackPanel HorizontalAlignment="Center" Height="304" Margin="0" VerticalAlignment="Center" Width="402">
+            <TextBlock TextWrapping="Wrap" Text="Вход" FontSize="36"/>
+            <TextBlock TextWrapping="Wrap" Text="Логин" Margin="0,10" FontSize="20"/>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Margin="0,0,0,10" FontSize="20"/>
+            <TextBlock TextWrapping="Wrap" Text="Пароль" Margin="0,10" FontSize="20"/>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Margin="0,0,0,10" FontSize="20"/>
+            <Button x:Name="TestButton" Content="Войти" HorizontalAlignment="Stretch" Margin="0,20" Click="TestButton_Click" FontSize="24"/>
+        </StackPanel>
 
     </Grid>
 </Page>
