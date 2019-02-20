@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="real_estate_UWP.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:real_estate_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Height="304" Margin="0" VerticalAlignment="Center" Width="402">
+            <TextBlock TextWrapping="Wrap" Text="Вход" FontSize="36"/>
+            <TextBlock TextWrapping="Wrap" Text="Логин" Margin="0,10"/>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Margin="0,0,0,10"/>
+            <TextBlock TextWrapping="Wrap" Text="Пароль" Margin="0,10"/>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Margin="0,0,0,10"/>
+            <Button Content="Войти" HorizontalAlignment="Stretch" Margin="0,20"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
