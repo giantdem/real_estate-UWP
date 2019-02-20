@@ -114,8 +114,20 @@
     <Compile Include="Sections\Clients\ClientsMain.xaml.cs">
       <DependentUpon>ClientsMain.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sections\Contracts\ContractsAdd.xaml.cs">
+      <DependentUpon>ContractsAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\Contracts\ContractsFilter.xaml.cs">
+      <DependentUpon>ContractsFilter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sections\Contracts\ContractsMain.xaml.cs">
       <DependentUpon>ContractsMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\Contracts\ContractsRequests.xaml.cs">
+      <DependentUpon>ContractsRequests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\Contracts\ContractsView.xaml.cs">
+      <DependentUpon>ContractsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sections\RealEstate\RealEstateMain.xaml.cs">
       <DependentUpon>RealEstateMain.xaml</DependentUpon>
@@ -176,7 +188,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Sections\Contracts\ContractsAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\Contracts\ContractsFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sections\Contracts\ContractsMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\Contracts\ContractsRequests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\Contracts\ContractsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
