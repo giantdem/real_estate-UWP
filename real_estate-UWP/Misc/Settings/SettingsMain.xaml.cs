@@ -35,5 +35,16 @@ namespace real_estate_UWP.Misc.Settings
             }
             else ContentArea.Width = 450;
         }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (Password.Password == "")
+            {
+                Confirmation.Visibility = Visibility.Collapsed;
+                Confirmation.Password = "";
+            }
+            else
+                Confirmation.Visibility = Visibility.Visible;
+        }
     }
 }

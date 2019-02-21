@@ -31,7 +31,8 @@
                 </StackPanel>
 
                 <StackPanel Margin="0,5">
-                    <PasswordBox Header="Пароль" HeaderTemplate="{StaticResource headerCustom}" FontSize="14" Password="qwerty"/>
+                    <PasswordBox x:Name="Password" Header="Пароль" HeaderTemplate="{StaticResource headerCustom}" FontSize="14" PlaceholderText="Введите новый пароль" PasswordChanged="PasswordBox_PasswordChanged"/>
+                    <PasswordBox x:Name="Confirmation" Visibility="Collapsed" Margin="0,5,0,0" Header="Подтверждение" HeaderTemplate="{StaticResource headerCustom}" FontSize="14" PlaceholderText="Подтвердите пароль"/>
                 </StackPanel>
 
                 <Button Margin="0,15" Content="Сохранить изменения" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A"/>

@@ -27,8 +27,8 @@
 
                 <ContentDialog Name="ContentDialog">
                     <StackPanel>
-                        <CalendarDatePicker Header="Начальная дата" Margin="0,10,0,0" HorizontalAlignment="Stretch"/>
-                        <CalendarDatePicker Header="Конечная дата" Margin="0,10,0,0" HorizontalAlignment="Stretch"/>
+                        <CalendarDatePicker Header="Начальная дата" Margin="0,10,0,0" HorizontalAlignment="Stretch" PlaceholderText="Выберите начальную дату"/>
+                        <CalendarDatePicker Header="Конечная дата" Margin="0,10,0,0" HorizontalAlignment="Stretch" PlaceholderText="Выберите конечную дату"/>
                         <Button Margin="0,20,0,0" Content="Создать отчет" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A" Click="Button_Generate_Click"/>
                         <Button Margin="0,20,0,0" Content="Закрыть" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A" Click="Button_Close_Click"/>
                     </StackPanel>
