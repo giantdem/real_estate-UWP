@@ -120,8 +120,17 @@
     <Compile Include="Sections\Ads\AdsView.xaml.cs">
       <DependentUpon>AdsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sections\Clients\ClientsAdd.xaml.cs">
+      <DependentUpon>ClientsAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\Clients\ClientsFilter.xaml.cs">
+      <DependentUpon>ClientsFilter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sections\Clients\ClientsMain.xaml.cs">
       <DependentUpon>ClientsMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\Clients\ClientsView.xaml.cs">
+      <DependentUpon>ClientsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sections\Contracts\ContractsAdd.xaml.cs">
       <DependentUpon>ContractsAdd.xaml</DependentUpon>
@@ -205,7 +214,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Sections\Clients\ClientsAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\Clients\ClientsFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sections\Clients\ClientsMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\Clients\ClientsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
