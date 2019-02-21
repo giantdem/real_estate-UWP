@@ -11,11 +11,9 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" Height="304" Margin="0" VerticalAlignment="Center" Width="402">
             <TextBlock TextWrapping="Wrap" Text="Вход" Margin="0,10" FontSize="20"/>
-            <TextBlock TextWrapping="Wrap" Text="Логин" Margin="0,10"/>
-            <TextBox TextWrapping="Wrap" PlaceholderText="Введите ID, e-mail или номер телефона" Margin="0,0,0,10"/>
-            <TextBlock TextWrapping="Wrap" Text="Пароль" Margin="0,10"/>
-            <TextBox TextWrapping="Wrap" PlaceholderText="Введите пароль" Margin="0,0,0,10"/>
-            <Button x:Name="TestButton" Content="Войти" HorizontalAlignment="Stretch" Margin="0,20" Click="TestButton_Click" FontSize="20"/>
+            <TextBox Header="Логин" PlaceholderText="Введите ID, e-mail или номер телефона" Margin="0,0,0,10"/>
+            <PasswordBox Header="Пароль" PlaceholderText="Введите пароль" Margin="0,0,0,10"/>
+            <Button x:Name="TestButton" Content="Войти" HorizontalAlignment="Stretch" Margin="0,10" Click="TestButton_Click" FontSize="20"/>
         </StackPanel>
 
     </Grid>

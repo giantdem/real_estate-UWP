@@ -26,5 +26,14 @@ namespace real_estate_UWP.Misc.Settings
         {
             this.InitializeComponent();
         }
+
+        private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (ContentContainer.ActualWidth < 601)
+            {
+                ContentArea.Width = ContentContainer.ActualWidth - ContentContainer.Padding.Right * 2;
+            }
+            else ContentArea.Width = 450;
+        }
     }
 }

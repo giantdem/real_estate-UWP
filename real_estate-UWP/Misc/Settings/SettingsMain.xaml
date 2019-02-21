@@ -6,9 +6,43 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" SizeChanged="Page_SizeChanged">
+
+    <Page.Resources>
+        <DataTemplate x:Key="headerCustom">
+            <TextBlock Text="{Binding}" FontSize="18" />
+        </DataTemplate>
+    </Page.Resources>
 
     <Grid>
+        <RelativePanel VerticalAlignment="Top" Height="47" BorderThickness="0,0,0,2" BorderBrush="#FFBEBEBE">
+            <TextBlock Name="HeaderText" FontSize="18" Text="Настройки" VerticalAlignment="Center" Margin="55,0,0,0" RelativePanel.AlignVerticalCenterWithPanel="True" FontWeight="Bold"/>
+        </RelativePanel>
 
+        <ScrollViewer Name="ContentContainer" Margin="0,47,0,45" Padding="15,5">
+            <StackPanel Name="ContentArea" HorizontalAlignment="Left">
+                
+                <StackPanel Margin="0,5">
+                    <TextBox Header="Электронная почта" HeaderTemplate="{StaticResource headerCustom}" TextWrapping="Wrap" Text="example@company.com" FontSize="14"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <TextBox Header="Номер телефона" HeaderTemplate="{StaticResource headerCustom}" TextWrapping="Wrap" Text="+7 999 123 45 67" FontSize="14"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <PasswordBox Header="Пароль" HeaderTemplate="{StaticResource headerCustom}" FontSize="14" Password="qwerty"/>
+                </StackPanel>
+
+                <Button Margin="0,15" Content="Сохранить изменения" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A"/>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Height="45" VerticalAlignment="Bottom" Background="#FFE0E0E0" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button x:Name="CommandButton3" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+            <Button x:Name="CommandButton2" FontFamily="Segoe MDL2 Assets" Content="&#xE70F;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+            <Button x:Name="CommandButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE710;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+        </StackPanel>
     </Grid>
 </Page>
