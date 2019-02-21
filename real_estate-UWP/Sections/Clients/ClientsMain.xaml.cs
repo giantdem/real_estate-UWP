@@ -73,7 +73,7 @@ namespace real_estate_UWP.Sections.Clients
         {
             this.Clients.Add(new ClientItem()
             {
-                Title = "Клиент Клиентов",
+                Title = "Клиентов Клиент Клиентович",
                 Description = "Физическое лицо"
             });
             this.Clients.Add(new ClientItem()
