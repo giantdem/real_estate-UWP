@@ -98,8 +98,14 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Misc\Drafts\DraftsFilter.xaml.cs">
+      <DependentUpon>DraftsFilter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Misc\Drafts\DraftsMain.xaml.cs">
       <DependentUpon>DraftsMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\Drafts\DraftsView.xaml.cs">
+      <DependentUpon>DraftsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Misc\Employees\EmployeesMain.xaml.cs">
       <DependentUpon>EmployeesMain.xaml</DependentUpon>
@@ -198,7 +204,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Misc\Drafts\DraftsFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Misc\Drafts\DraftsMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Misc\Drafts\DraftsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
