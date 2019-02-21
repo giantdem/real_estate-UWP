@@ -1,0 +1,92 @@
+﻿<Page
+    x:Class="real_estate_UWP.Sections.Ads.AdsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:real_estate_UWP.Sections.Ads"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" SizeChanged="Page_SizeChanged">
+
+    <Page.Resources>
+        <DataTemplate x:Key="headerCustom">
+            <TextBlock Text="{Binding}" FontSize="18" />
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid>
+        <RelativePanel VerticalAlignment="Top" Height="47" BorderThickness="0,0,0,2" BorderBrush="#FFBEBEBE">
+            <TextBlock Name="HeaderText" FontSize="18" Text="Просмотр объявления" VerticalAlignment="Center" Margin="55,0,0,0" RelativePanel.AlignVerticalCenterWithPanel="True" FontWeight="Bold"/>
+            <CheckBox RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" HorizontalAlignment="Right" VerticalAlignment="Center" Width="32" Height="32" MinWidth="32" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="0"/>
+        </RelativePanel>
+
+        <ScrollViewer Name="ContentContainer" Margin="0,47,0,45" Padding="15,5">
+            <StackPanel Name="ContentArea" HorizontalAlignment="Left">
+                <StackPanel Margin="0,5">
+                    <ComboBox Header="Объект" HeaderTemplate="{StaticResource headerCustom}" PlaceholderText="Выпадающий список" FontSize="14" HorizontalAlignment="Stretch">
+                        <x:String>Item1</x:String>
+                        <x:String>Item2</x:String>
+                        <x:String>Item3</x:String>
+                        <x:String>Item4</x:String>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <ComboBox Header="Договор" HeaderTemplate="{StaticResource headerCustom}" PlaceholderText="Выпадающий список" FontSize="14" HorizontalAlignment="Stretch">
+                        <x:String>Item1</x:String>
+                        <x:String>Item2</x:String>
+                        <x:String>Item3</x:String>
+                        <x:String>Item4</x:String>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <ComboBox Header="Клиент" HeaderTemplate="{StaticResource headerCustom}" PlaceholderText="Выпадающий список" FontSize="14" HorizontalAlignment="Stretch">
+                        <x:String>Item1</x:String>
+                        <x:String>Item2</x:String>
+                        <x:String>Item3</x:String>
+                        <x:String>Item4</x:String>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <ComboBox Header="Сотрудник" HeaderTemplate="{StaticResource headerCustom}" PlaceholderText="Выпадающий список" FontSize="14" HorizontalAlignment="Stretch">
+                        <x:String>Item1</x:String>
+                        <x:String>Item2</x:String>
+                        <x:String>Item3</x:String>
+                        <x:String>Item4</x:String>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <CalendarDatePicker HeaderTemplate="{StaticResource headerCustom}" FontSize="14" Header="Дата" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <TextBox Header="Срок" HeaderTemplate="{StaticResource headerCustom}" TextWrapping="Wrap" PlaceholderText="Текстовое поле" FontSize="14"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <TextBox Header="Текст объявления" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="128" HeaderTemplate="{StaticResource headerCustom}" TextWrapping="Wrap" PlaceholderText="Большой текст&#x0a;&#x0a;" FontSize="14" AcceptsReturn="True"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <ComboBox Header="Статус" HeaderTemplate="{StaticResource headerCustom}" PlaceholderText="Выпадающий список" FontSize="14" HorizontalAlignment="Stretch">
+                        <x:String>Закрыто по исполнению</x:String>
+                        <x:String>Открыто</x:String>
+                        <x:String>Отменено/истекло</x:String>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="0,5">
+                    <TextBox Header="Комментарий" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="128" HeaderTemplate="{StaticResource headerCustom}" TextWrapping="Wrap" PlaceholderText="Большой текст&#x0a;&#x0a;" FontSize="14" AcceptsReturn="True"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Height="45" VerticalAlignment="Bottom" Background="#FFE0E0E0" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button x:Name="edit" FontFamily="Segoe MDL2 Assets" Content="&#xE70F;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+            <Button x:Name="delete" FontFamily="Segoe MDL2 Assets" Content="&#xE74D;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+        </StackPanel>
+    </Grid>
+</Page>

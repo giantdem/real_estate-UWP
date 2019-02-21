@@ -6,9 +6,44 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" SizeChanged="Page_SizeChanged">
 
     <Grid>
+        <RelativePanel VerticalAlignment="Top" Height="47" BorderThickness="0,0,0,2" BorderBrush="#FFBEBEBE">
+            <TextBlock Name="HeaderText" FontSize="18" Text="Объявления" VerticalAlignment="Center" Margin="55,0,0,0" RelativePanel.AlignVerticalCenterWithPanel="True" FontWeight="Bold"/>
+        </RelativePanel>
 
+        <ScrollViewer Name="ContentContainer" Margin="0,47,0,45" Padding="15,5">
+            <StackPanel Name="ContentArea" HorizontalAlignment="Left">
+                <ListView x:Name="listViewe4ka" ItemsSource="{x:Bind ViewModel.Ads}" IsItemClickEnabled="True" ItemClick="listViewe4ka_ItemClick">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="local:AdItem">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="32"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Padding="5">
+                                    <TextBlock Text="{x:Bind Title}" FontWeight="Bold" Margin="0,0,0,5"/>
+                                    <TextBlock Text="{x:Bind Description}"/>
+                                </StackPanel>
+                                <CheckBox HorizontalAlignment="Right" VerticalAlignment="Center" IsChecked="{x:Bind isActive}" Width="32" Height="32" MinWidth="32" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" IsEnabled="False" Grid.ColumnSpan="2"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Height="45" VerticalAlignment="Bottom" Background="#FFE0E0E0" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button x:Name="filter" Click="filter_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE71C;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+            <Button x:Name="add" Click="add_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE710;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+            <Button x:Name="sync" FontFamily="Segoe MDL2 Assets" Content="&#xE895;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
+        </StackPanel>
     </Grid>
 </Page>

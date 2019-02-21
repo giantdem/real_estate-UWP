@@ -108,8 +108,17 @@
       <DependentUpon>SettingsMain.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sections\Ads\AdsAdd.xaml.cs">
+      <DependentUpon>AdsAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\Ads\AdsFilter.xaml.cs">
+      <DependentUpon>AdsFilter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sections\Ads\AdsMain.xaml.cs">
       <DependentUpon>AdsMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\Ads\AdsView.xaml.cs">
+      <DependentUpon>AdsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sections\Clients\ClientsMain.xaml.cs">
       <DependentUpon>ClientsMain.xaml</DependentUpon>
@@ -180,7 +189,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Sections\Ads\AdsAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\Ads\AdsFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sections\Ads\AdsMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\Ads\AdsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
