@@ -36,10 +36,10 @@ namespace real_estate_UWP.Templates
             if (TopItems.SelectedIndex == -1) return;
             switch ((TopItems.SelectedItem as ListViewItem).Name)
             {
-                case "TestPageItem":
-                    //тестирование шаблона
-                    ContentPage.Navigate(typeof(Templates.SectionTemplate));
-                    break;
+                //case "TestPageItem":
+                //    //тестирование шаблона
+                //    ContentPage.Navigate(typeof(Templates.SectionTemplate));
+                //    break;
                 case "RealEstateItem":
                     ContentPage.Navigate(typeof(Sections.RealEstate.RealEstateMain));
                     break;
