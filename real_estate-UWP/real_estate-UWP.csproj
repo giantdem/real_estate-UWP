@@ -147,8 +147,20 @@
     <Compile Include="Sections\Contracts\ContractsView.xaml.cs">
       <DependentUpon>ContractsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sections\RealEstate\REAdd.xaml.cs">
+      <DependentUpon>REAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sections\RealEstate\RealEstateMain.xaml.cs">
       <DependentUpon>RealEstateMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\RealEstate\REFilter.xaml.cs">
+      <DependentUpon>REFilter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\RealEstate\REInspections.xaml.cs">
+      <DependentUpon>REInspections.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sections\RealEstate\REView.xaml.cs">
+      <DependentUpon>REView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sections\Reporting\ReportingMain.xaml.cs">
       <DependentUpon>ReportingMain.xaml</DependentUpon>
@@ -250,7 +262,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Sections\RealEstate\REAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sections\RealEstate\RealEstateMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\RealEstate\REFilter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\RealEstate\REInspections.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sections\RealEstate\REView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
