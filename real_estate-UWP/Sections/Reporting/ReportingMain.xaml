@@ -22,15 +22,18 @@
         <ScrollViewer Name="ContentContainer" Margin="0,47,0,45" Padding="15,5">
             <StackPanel Name="ContentArea" HorizontalAlignment="Left">
 
-                <Button Margin="0,20,0,0" Content="Создать отчет по налогам" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A"/>
-                <Button Margin="0,20,0,0" Content="Создать статистический отчет" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A"/>
+                <Button Margin="0,20,0,0" Content="Создать отчет по налогам" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A" Click="Button_Stat_Click"/>
+                <Button Margin="0,20,0,0" Content="Создать статистический отчет" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A" Click="Button_Taxes_Click"/>
 
-                <StackPanel>
-                    <CalendarDatePicker Header="Начальная дата" Margin="0,10,0,0" HorizontalAlignment="Stretch"/>
-                    <CalendarDatePicker Header="Конечная дата" Margin="0,10,0,0" HorizontalAlignment="Stretch"/>
-                    <Button Margin="0,20,0,0" Content="Создать отчет" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A" Click="Button_Click"/>
-                </StackPanel>
-                
+                <ContentDialog Name="ContentDialog">
+                    <StackPanel>
+                        <CalendarDatePicker Header="Начальная дата" Margin="0,10,0,0" HorizontalAlignment="Stretch"/>
+                        <CalendarDatePicker Header="Конечная дата" Margin="0,10,0,0" HorizontalAlignment="Stretch"/>
+                        <Button Margin="0,20,0,0" Content="Создать отчет" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A" Click="Button_Generate_Click"/>
+                        <Button Margin="0,20,0,0" Content="Закрыть" HorizontalAlignment="Stretch" FontSize="16" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A" Click="Button_Close_Click"/>
+                    </StackPanel>
+                </ContentDialog>
+
             </StackPanel>
         </ScrollViewer>
 

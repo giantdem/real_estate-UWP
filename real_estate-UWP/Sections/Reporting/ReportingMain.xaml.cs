@@ -37,7 +37,7 @@ namespace real_estate_UWP.Sections.Reporting
             else ContentArea.Width = 450;
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Generate_Click(object sender, RoutedEventArgs e)
         {
             var messageDialog = new MessageDialog("Файл отправлен на корпоративную почту.");
             messageDialog.Title = "Отчет сгенерирован.";
@@ -50,6 +50,21 @@ namespace real_estate_UWP.Sections.Reporting
 
             // Show the message dialog
             await messageDialog.ShowAsync();
+        }
+
+        private async void Button_Stat_Click(object sender, RoutedEventArgs e)
+        {
+            await ContentDialog.ShowAsync();
+        }
+
+        private async void Button_Taxes_Click(object sender, RoutedEventArgs e)
+        {
+            await ContentDialog.ShowAsync();
+        }
+
+        private void Button_Close_Click(object sender, RoutedEventArgs e)
+        {
+            ContentDialog.Hide();
         }
     }
 }
