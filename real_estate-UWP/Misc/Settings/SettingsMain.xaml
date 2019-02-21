@@ -38,11 +38,5 @@
 
             </StackPanel>
         </ScrollViewer>
-
-        <StackPanel Height="45" VerticalAlignment="Bottom" Background="#FFE0E0E0" Orientation="Horizontal" FlowDirection="RightToLeft">
-            <Button x:Name="CommandButton3" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
-            <Button x:Name="CommandButton2" FontFamily="Segoe MDL2 Assets" Content="&#xE70F;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
-            <Button x:Name="CommandButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE710;" FontSize="24" Width="50" Height="45" Background="{x:Null}" />
-        </StackPanel>
     </Grid>
 </Page>

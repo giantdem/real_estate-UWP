@@ -13,7 +13,7 @@
             <TextBlock TextWrapping="Wrap" Text="Вход" Margin="0,10" FontSize="20"/>
             <TextBox Header="Логин" PlaceholderText="Введите ID, e-mail или номер телефона" Margin="0,0,0,10"/>
             <PasswordBox Header="Пароль" PlaceholderText="Введите пароль" Margin="0,0,0,10"/>
-            <Button x:Name="TestButton" Content="Войти" HorizontalAlignment="Stretch" Margin="0,10" Click="TestButton_Click" FontSize="20"/>
+            <Button x:Name="TestButton" Content="Войти" HorizontalAlignment="Stretch" Margin="0,10" Click="TestButton_Click" FontSize="20" Background="#FFD0FFC5" BorderBrush="#FF7A7A7A"/>
         </StackPanel>
 
     </Grid>
